@@ -2,20 +2,27 @@
 
 ## Python & Data Science Internship Assessment
 
-This project performs an end-to-end analysis of the Superstore retail sales dataset.
+This project is based on the Superstore retail sales dataset.
 
-## Project Objectives
+The main aim of this project is to understand the sales performance of the business, find useful patterns in the data, and build a basic model to predict monthly sales.
 
-- Clean and inspect the retail sales dataset
-- Handle missing values and duplicates
+## Objectives
+
+The main objectives of this project are:
+
+- Load and understand the sales dataset
+- Check and clean the data
+- Handle missing values and duplicate records
+- Convert data into suitable formats
 - Perform exploratory data analysis
-- Analyze category-wise and region-wise sales
-- Identify top-selling products
-- Generate statistical summaries
-- Build and evaluate sales forecasting models
-- Provide actionable business recommendations
+- Study sales by month, category, and region
+- Find the top-selling products
+- Calculate basic statistical values
+- Build a sales forecasting model
+- Compare model predictions with actual sales
+- Give some business recommendations based on the analysis
 
-## Technologies Used
+## Tools Used
 
 - Python 3
 - Pandas
@@ -25,11 +32,30 @@ This project performs an end-to-end analysis of the Superstore retail sales data
 - Scikit-learn
 - Jupyter Notebook
 
-## Analysis Performed
+## Dataset
 
-### Exploratory Data Analysis
+The project uses the Superstore Sales Dataset provided for the internship assessment.
 
-The project includes:
+The dataset used in this project is:
+
+`data/train.csv`
+
+## Data Cleaning
+
+The dataset was first loaded and inspected.
+
+The following checks were performed:
+
+- Checked the number of rows and columns
+- Checked data types
+- Checked missing values
+- Checked duplicate records
+- Converted date columns into proper date format
+- Handled the missing values found in the dataset
+
+## Exploratory Data Analysis
+
+The following visualizations were created:
 
 1. Monthly Sales Trend
 2. Sales by Product Category
@@ -38,41 +64,57 @@ The project includes:
 5. Top 10 Products by Sales
 6. Actual vs Predicted Monthly Sales
 
-### Statistical Analysis
+The charts are saved in the `outputs` folder.
 
-Key Sales statistics:
+## Statistical Summary
 
-- Mean: 230.77
-- Median: 54.49
+The main statistics for Sales are:
+
+- Mean Sales: 230.77
+- Median Sales: 54.49
 - Standard Deviation: 626.65
-- Minimum: 0.444
-- Maximum: 22,638.48
+- Minimum Sales: 0.444
+- Maximum Sales: 22,638.48
 
-### Machine Learning
+The mean is higher than the median, which shows that some orders have much higher sales values and increase the average.
 
-Two regression models were evaluated:
+## Machine Learning
+
+For sales forecasting, the monthly sales data was used.
+
+Two regression models were tested:
+
+- Linear Regression
+- Random Forest Regression
+
+The models were evaluated using RMSE and R² score.
 
 | Model | RMSE | R² |
 |---|---:|---:|
 | Linear Regression | 23,619.29 | 0.0332 |
 | Random Forest Regression | 16,094.10 | 0.5511 |
 
-The Random Forest model performed better and was selected as the final model.
+The Random Forest model performed better than Linear Regression based on the RMSE and R² results.
 
 ## Key Findings
 
-- Technology generated the highest category sales: 827,455.87.
-- West was the highest-performing region: 710,219.68.
-- Canon imageCLASS 2200 Advanced Copier was the top-selling product: 61,599.82.
-- November 2018 recorded the highest monthly sales: 117,938.15.
+Some important findings from the analysis are:
 
-## Business Recommendations
+- Technology was the best-performing category with total sales of 827,455.87.
+- West was the best-performing region with total sales of 710,219.68.
+- Canon imageCLASS 2200 Advanced Copier was the top-selling product with sales of 61,599.82.
+- November 2018 had the highest monthly sales of 117,938.15.
+- February 2015 had the lowest monthly sales of 4,519.89.
 
-- Focus inventory and promotions on Technology products.
-- Investigate opportunities to improve South-region performance.
-- Prioritize high-performing products.
-- Prepare inventory and marketing for high-demand periods.
-- Improve forecasting by incorporating additional business variables.
+## Recommendations
+
+Based on the analysis, some recommendations are:
+
+- Focus more on Technology products because they have the highest sales.
+- Study the reasons for lower sales in the South region and try to improve its performance.
+- Keep sufficient stock of products that have high sales.
+- Plan promotions and inventory according to high-demand periods.
+- Future forecasting can be improved by using more business-related features.
 
 ## Project Structure
 
