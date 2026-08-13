@@ -125,16 +125,15 @@ Sales-Performance-Forecasting/
 │   └── train.csv
 │
 ├── outputs/
-│   ├── monthly_sales_trend.png
+│   ├── actual_vs_predicted.png
 │   ├── category_sales.png
-│   ├── region_sales.png
 │   ├── correlation_heatmap.png
-│   ├── top_10_products.png
-│   └── actual_vs_predicted.png
+│   ├── monthly_sales_trend.png
+│   ├── region_sales.png
+│   └── top_10_products.png
 │
 ├── report/
 │   └── Sales_Performance_Forecasting_Report.pdf
 │
 ├── Sales_Performance_Forecasting.ipynb
-├── create_report.py
 └── README.md
